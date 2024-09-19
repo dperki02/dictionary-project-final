@@ -9,14 +9,17 @@ export default function Dictionary() {
 
     
     function handleResponse(response) {
-        console.log(response.data[0]);
-        setResults(response.data[0]);
+        console.log("API Response");
+        console.log(response.data);
+        setResults(response.data);
     }
     function search(event) {
       event.preventDefault();
       // documentation : https://www.shecodes.io/learn/apis/dictionary
       let key = "5a66ffb09c7a4o246a78be8f021tfdd3";
         let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${searchTerm}&key=${key}`;
+        console.log("apiUrl");
+        console.log(apiUrl);
       axios.get(apiUrl).then(handleResponse);
     }
     function handleSearchTeamChange(event) {
