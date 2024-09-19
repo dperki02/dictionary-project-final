@@ -27,14 +27,14 @@ export default function App() {
           </a>{" "}
           and is{" "}
           <a
-            href="https://github.com/dperki02/react-weather-app"
+            href="https://github.com/dperki02/dictionary-project-final"
             target="_blank"
             rel="noopener noreferrer">
             open-sourced on GitHub
           </a>{" "}
           and{" "}
           <a
-            href="https://react-weather-app-dpp.netlify.app"
+            href="https://dana-dictionary.netlify.app"
             target="_blank"
             rel="noopener noreferrer">
             hosted on Netlify

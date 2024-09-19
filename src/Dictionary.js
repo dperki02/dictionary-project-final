@@ -13,10 +13,11 @@ export default function Dictionary() {
         setResults(response.data[0]);
     }
     function search(event) {
-        event.preventDefault();
-        // documentation : https://dictionaryapi.dev/
-        let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchTerm}`;
-        axios.get(apiUrl).then(handleResponse);
+      event.preventDefault();
+      // documentation : https://www.shecodes.io/learn/apis/dictionary
+      let key = "5a66ffb09c7a4o246a78be8f021tfdd3";
+        let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${searchTerm}&key=${key}`;
+      axios.get(apiUrl).then(handleResponse);
     }
     function handleSearchTeamChange(event) {
         setTerm(event.target.value);
